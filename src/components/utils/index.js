@@ -45,16 +45,33 @@ export const PlaceholderFluid = () => (
 );
 
 export const Loader = (props) => {
-const style = {
-  position: 'fixed',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)'
-}
- return (
-   <div>
-      <SemanticLoader style={style} size={props.size} active inline="centered" />
-   </div>
-    
- )
-};
+  const style = {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)'
+  }
+   return (
+     <div>
+        <SemanticLoader style={style} size={props.size} active inline="centered" />
+     </div>
+   )
+  };
+
+  export const LoaderAsync = (props) => {
+    const style = {
+      position: 'fixed',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)'
+    }
+    if (props.error) {
+      return <div>Error! <button onClick={ props.retry }>Retry</button></div>;
+    } 
+     return (
+       <div>
+          <SemanticLoader active inline="centered" />
+       </div>
+     )
+    };
+  

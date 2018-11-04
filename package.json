@@ -7,7 +7,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "serve:un": "serve dist --unzipped --port=5002",
+    "serve:un": "serve dist --unzipped --port=5003",
     "prod": "webpack --mode=production",
     "dev": "webpack-dev-server --mode=development --port=5050 --open"
   },
@@ -53,6 +53,7 @@
     "react": "^16.6.0",
     "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.6.0",
+    "react-loadable": "^5.5.0",
     "react-router-dom": "^4.3.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.83.0"

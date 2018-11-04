@@ -50,7 +50,7 @@ class CustomGrid extends Component {
       doesDataFlower
     } = this.state;
     return (
-      <div style={{padding: "0 15px 0 15px", width: '100%', height: '80vh' }}>
+      <div style={{ width: '100%', height: '100%' }}>
         <div
           id="myGrid"
           style={{

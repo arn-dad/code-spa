@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import HomeLayout from '../components/home';
 
 class Home extends Component {
-  componentWillMount() {
-    console.log('Home did mount');
-  }
 
   render() {
     return (
