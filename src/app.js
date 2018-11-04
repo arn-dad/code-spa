@@ -12,7 +12,11 @@ const panes = [
   },
   {
     menuItem : 'Grid',
-    render   : () => <Tab.Pane><Grid /></Tab.Pane>
+    render   : () => (
+      <Tab.Pane>
+        <Grid />
+      </Tab.Pane>
+    )
   },
   {
     menuItem : 'Chart',
@@ -22,7 +26,7 @@ const panes = [
 
 const App = () => (
   <div>
-    <h1 style={{ marginLeft: '10px' }}>Simple Approach</h1>
+    <h1 style={{ marginLeft: '10px' }}>Component based approach</h1>
     <Tab panes={panes} />
   </div>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Placeholder, Image } from 'semantic-ui-react';
+import { Placeholder, Image, Loader as SemanticLoader } from 'semantic-ui-react';
 
 export const CustomPlaceholder = () => (
   <div style={{ padding: '0 0 15px 0' }}>
@@ -43,3 +43,18 @@ export const PlaceholderFluid = () => (
     </Placeholder.Paragraph>
   </Placeholder>
 );
+
+export const Loader = (props) => {
+const style = {
+  position: 'fixed',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)'
+}
+ return (
+   <div>
+      <SemanticLoader style={style} size={props.size} active inline="centered" />
+   </div>
+    
+ )
+};

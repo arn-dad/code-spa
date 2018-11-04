@@ -1,5 +1,5 @@
 function countryCellRenderer(params) {
-  return `<span style="cursor: default;">${params.value}</span>`;
+  return `<span style="cursor: default;"> ${params.value}</span>`;
 }
 
 function latinText() {

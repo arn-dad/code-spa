@@ -7,7 +7,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "serve:un": "serve dist --unzipped --port=5000",
+    "serve:un": "serve dist --unzipped --port=5001",
     "prod": "webpack --mode=production",
     "dev": "webpack-dev-server --mode=development --port=5050 --open"
   },

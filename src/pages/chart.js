@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CustomChart from '../components/chart';
+import DynamicComponent from '../components/dynamicComponent';
 
 class Chart extends Component {
   componentWillMount() {
@@ -9,7 +9,7 @@ class Chart extends Component {
   render() {
     return (
       <div style={{ height: '85vh', padding: '10px 0 15px 0' }}>
-        <CustomChart />
+         <DynamicComponent loader={() => import(/* webpackChunkName: "chart" */ '../components/chart')} />
       </div>
     );
   }
