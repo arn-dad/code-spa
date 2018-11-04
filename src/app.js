@@ -3,6 +3,7 @@ import { Tab } from 'semantic-ui-react';
 import Home from './pages/home';
 import Grid from './pages/grid';
 import Chart from './pages/chart';
+import Routing from './routes/routes'
 
 
 const panes = [
@@ -26,8 +27,8 @@ const panes = [
 
 const App = () => (
   <div>
-    <h1 style={{ marginLeft: '10px' }}>Component based approach</h1>
-    <Tab panes={panes} />
+    <h1 style={{ marginLeft: '10px' }}>Route Based approach</h1>
+    <Routing />
   </div>
 );
 

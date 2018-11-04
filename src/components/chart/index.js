@@ -59,7 +59,7 @@ class CustomChart extends Component {
       }
     } = this.state;
     return (
-      <div style={{ height: '80%' }}>
+      <div style={{ height: '80vh' }}>
         <Grid divided="vertically">
           <Grid.Row columns={3}>
             <Grid.Column>
